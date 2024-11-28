@@ -1,0 +1,21 @@
+services:
+  digital-certificate-be-dev:
+    image: itprasmuleli/dbc-be-v1:dev
+    container_name: digital-certificate-be-dev
+    ports:
+      - 3003:3001
+    environment:
+      - PORT=3001
+      - DB_PORT=3306
+      - DB_PASSWORD=kvlVrZqMMyIB
+      - DB_USERNAME=digital_certificate_dev
+      - DB_NAME=digital_certificate_dev
+      - DB_HOST=13.213.244.150
+      - SECRET_KEY=BYUFDSFR78R4H2BRVJ32VYSFDSU47263GFDSJFDSFDJSVFDSFTY32EWYTREWRVDSVFNSDVHGXSC7632
+      - SECRET_KEY_CMS=2f1f2cd24b8118f8a8c75682615b0430bf110787e0ab1126880a1e1cd0c47387f9e8f2b8c5745485e252fd9ec1ef891aca37d931ce64716c5af85d6e40f4997a
+      - EMAIL_FROM=no-reply@prasmul-eli.co
+      - SMTP_HOST=smtp.gmail.com
+      - SMTP_PORT=465
+      - SMTP_SECURE=true
+      - SMTP_USER=no-reply@prasmul-eli.co
+      - SMTP_PASSWORD=Prasmul1234

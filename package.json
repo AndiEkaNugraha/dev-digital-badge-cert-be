@@ -1,0 +1,48 @@
+{
+  "name": "digital-badge-certificate-be",
+  "version": "1.0.0",
+  "private": true,
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www",
+    "build": "ncc build -o build/lib app.js && pkg --target node14-win-x64 -o build/server-interface.exe ./build/lib/index.js"
+  },
+  "dependencies": {
+    "axios": "^1.2.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.2.0",
+    "cryptr": "^6.3.0",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.2",
+    "exceljs": "^4.4.0",
+    "express": "~4.16.1",
+    "express-fileupload": "^1.4.3",
+    "express-load": "^1.1.16",
+    "handlebars": "^4.7.8",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "jsonwebtoken": "^9.0.2",
+    "memory-cache": "^0.2.0",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.5-lts.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "nanoid": "^4.0.0",
+    "nodemailer": "^6.8.0",
+    "nodemon": "^2.0.20",
+    "pm2": "^5.3.0",
+    "sequelize": "^6.22.1",
+    "sequelize-auto": "^0.8.8",
+    "util": "^0.12.5",
+    "uuidv4": "^6.2.13",
+    "xendit-node": "^1.21.10",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.6.1"
+  }
+}
